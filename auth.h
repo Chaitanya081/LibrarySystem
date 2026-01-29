@@ -1,22 +1,10 @@
-// user.h
-#ifndef USER_H
-#define USER_H
+#ifndef AUTH_H
+#define AUTH_H
 
+#include "user.h"
 #include <string>
 using namespace std;
 
-class User {
-public:
-    string username;
-    string password;
-    string role; // admin or user
-
-    User() {}
-    User(string u, string p, string r) {
-        username = u;
-        password = p;
-        role = r;
-    }
-};
+bool login(string username, string password, User &loggedUser);
 
 #endif
