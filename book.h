@@ -1,4 +1,3 @@
-// book.h
 #ifndef BOOK_H
 #define BOOK_H
 
@@ -13,6 +12,7 @@ public:
     bool issued;
 
     Book() {}
+
     Book(int i, string t, string a, bool is) {
         id = i;
         title = t;
